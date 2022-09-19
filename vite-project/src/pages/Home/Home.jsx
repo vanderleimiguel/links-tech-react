@@ -131,7 +131,7 @@ export function Home() {
 
                 </section><br />
                 <button type="submit-update" className="btn-submit-update">
-                  EDITAR LINK
+                  EDITAR ARTIGO
                 </button>
               </form>
             </div>
@@ -161,7 +161,10 @@ export function Home() {
               </section>
               <section className='modal-link'>
                 <h2>Título: {uniqueLink.title}</h2>
-                <h3>Url: {uniqueLink.url}</h3>
+                <h3>Url: {uniqueLink.url}</h3><br />
+                <button className='btn-visit'>
+                  <a target="_blank" href={uniqueLink.url}>VISITAR ARTIGO</a>
+                </button>
               </section>
             </section><br />
             <button className="btn-update"
@@ -170,14 +173,14 @@ export function Home() {
 
               }}
             >
-              EDITAR LINK
+              EDITAR ARTIGO
             </button><br />
             <button className='btn-delete'
               onClick={() => {
                 deleteLink(uniqueLink._id);
               }}
             >
-              DELETAR LINK
+              DELETAR ARTIGO
             </button>
           </>
         )}

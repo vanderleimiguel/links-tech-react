@@ -1,10 +1,10 @@
 import './Header.css'
-import logo from '../../assets/images/logo.png'
 import createIcon from '../../assets/images/create.png'
 import { useState } from 'react'
 import Modal from "react-modal"
 import { Form } from '../Form/Form'
 import { CgClose } from "react-icons/cg";
+
 
 const customStyles = {
   content: {
@@ -39,8 +39,7 @@ export function Header() {
       <header>
         <div className='row'>
           <div className="Logo">
-            <img src={logo} width='70px' alt='Logo Links' className='Logo__icone' />
-            <span className='Logo__titulo'>Links de Artigos de Tecnologia</span>
+            <span className='Logo__titulo'>Artigos de Tecnologia</span>
           </div>
           <div >
             <button className="btn-create-icon" onClick={handleModal}>

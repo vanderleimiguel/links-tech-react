@@ -3,8 +3,6 @@ const defaultUrl = "https://api-links-tech.herokuapp.com/links";
 export const api = {
 
   createLink: async (link) => {
-    console.log(link)
-    console.log("entrou")
     const response = await fetch(defaultUrl + "/create", {
       method: "POST",
       headers: new Headers({ "Content-Type": "application/json" }),
@@ -30,15 +28,13 @@ export const api = {
     return linkUpdated
   },
 
-
-
-  deleteCavaleiro: async (cavaleiroId) => {
-    const response = await fetch(defaultUrl + "/delete-cavaleiro/" + cavaleiroId, {
+  deleteLink: async (linkId) => {
+    const response = await fetch(defaultUrl + "/delete/" + linkId, {
       method: "DELETE",
       headers: new Headers({ "Content-Type": "application/json" }),
     });
-    const cavaleiroDeleted = await response.json();
-    return cavaleiroDeleted;
+    const linkDeleted = await response.json();
+    return linkDeleted;
   },
 };
 

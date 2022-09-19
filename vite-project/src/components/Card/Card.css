@@ -1,8 +1,8 @@
 .card-component {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  font-size: 1rem;
+  width: 14rem;
+  height: 7rem;
   align-items: center;
   justify-content: center;
   border: 1px solid rgb(0, 0, 0);
@@ -17,5 +17,5 @@
 }
 
 .card-component h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
