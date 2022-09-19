@@ -1,6 +1,5 @@
 .Home {
-  background: rgb(241, 255, 0);
-  background: linear-gradient(0deg, rgba(241, 255, 0, 1) 22%, rgba(25, 53, 255, 1) 67%);
+  background: grey;
   margin: 1rem;
   padding: 1rem;
   border-radius: 20px;

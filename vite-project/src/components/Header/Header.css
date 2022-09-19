@@ -18,7 +18,7 @@
   height: 3rem;
   margin-left: 1rem;
   box-shadow: 0px 0px 15px rgba(89, 0, 253, 0.3);
-  background-color: rgb(179, 179, 35);
+  background: grey;
 }
 
 .Logo__titulo {
@@ -33,7 +33,7 @@
   align-items: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(89, 0, 253, 0.3);
-  background-color: rgb(179, 179, 35);
+  background: grey;
   width: 15rem;
   height: 3rem;
   position: relative;
