@@ -1,0 +1,78 @@
+.Header {
+  margin: 0 auto 25px auto;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0 30px 0;
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  width: 40rem;
+  height: 3rem;
+  margin-left: 1rem;
+  box-shadow: 0px 0px 15px rgba(89, 0, 253, 0.3);
+  background-color: rgb(179, 179, 35);
+}
+
+.Logo__titulo {
+  position: absolute;
+  left: 5.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.btn-create-icon {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(89, 0, 253, 0.3);
+  background-color: rgb(179, 179, 35);
+  width: 15rem;
+  height: 3rem;
+  position: relative;
+  right: 1rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.btn-create-icon:hover {
+  background-color: rgb(114, 114, 11);
+}
+
+@media (max-width: 1220px) {
+  .Logo {
+    width: 20rem;
+  }
+
+  .Logo__titulo {
+    font-size: 1.5rem;
+  }
+
+  .btn-create-icon {
+    font-size: 1.5rem;
+    width: 10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-create-icon {
+    font-size: 1.5rem;
+    width: 10rem;
+    display: flex;
+    margin: 0 auto;
+  }
+}

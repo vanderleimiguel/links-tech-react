@@ -1,0 +1,46 @@
+.form {
+  position: relative;
+  background-color: rgb(71, 71, 71);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  font-size: 2rem;
+}
+
+.form-inputs button {
+  font-size: 1rem;
+  width: 10rem;
+  height: 3rem;
+  border-width: 1px;
+  color: #fff;
+  border-color: #4b8f29;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0px 10px 14px -7px #3e7327;
+  text-shadow: 0px 1px 0px #5b8a3c;
+  background: linear-gradient(#77b55a, #72b352);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.form-inputs button:hover {
+  background: rgb(57, 184, 57);
+}
+
+input.form-title {
+  width: 17.2rem;
+  font-size: 1.5rem;
+  background-color: #f1ff00;
+}
+
+input.form-url {
+  width: 11.4rem;
+  font-size: 1.5rem;
+  background-color: #f1ff00;
+}
