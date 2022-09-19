@@ -46,7 +46,7 @@ export function Home() {
 
   function handleModal() {
     setModalIsOpen(!modalIsOpen);
-    setEditCavaleiro(!true)
+    setEditLink(!true)
   }
 
   async function updateOneLink(event) {
@@ -74,23 +74,20 @@ export function Home() {
   return (
     <div className="Home">
       <div className="card-list">
-        {cavaleiroList.map((item, index) => {
+        {linkList.map((item, index) => {
           return (
             <button
               className="button-card"
               onClick={() => {
-                setUniqueCavaleiro(item);
+                setUniqueLink(item);
                 handleModal();
               }}
               key={index}
             >
               <Card
                 key={index}
-                nome={item.nome}
-                constelacao={item.constelacao}
-                categoria={item.categoria}
-                tecnica={item.tecnica}
-                idade={item.idade}
+                title={item.title}
+                url={item.url}
               />
             </button>
           );
@@ -103,61 +100,38 @@ export function Home() {
         style={customStyles}
         contentLabel="Card details"
       >
-        {editCavaleiro ? (
+        {editLink ? (
           <>
             (<div className="form-update">
-              <form onSubmit={updateOneCavaleiro} className="form-inputs-update">
+              <form onSubmit={updateOneLink} className="form-inputs-update">
                 <section>
                   <span>Id: </span>
                   <input className="form-id-update"
                     disabled
                     type="text"
                     name="_id"
-                    defaultValue={uniqueCavaleiro._id}
+                    defaultValue={uniqueLink._id}
                   ></input>
                 </section>
                 <section>
-                  <span>Nome: </span>
-                  <input className="form-nome-update"
+                  <span>Título: </span>
+                  <input className="form-title-update"
                     type="text"
-                    name="nome"
-                    defaultValue={uniqueCavaleiro.nome}
+                    name="title"
+                    defaultValue={uniqueLink.title}
                   ></input>
                 </section>
                 <section>
-                  <span>Constelação: </span>
-                  <input className="form-constelacao-update"
+                  <span>Url: </span>
+                  <input className="form-url-update"
                     type="text"
-                    name="constelacao"
-                    defaultValue={uniqueCavaleiro.constelacao}
+                    name="url"
+                    defaultValue={uniqueLink.url}
                   ></input>
-                </section>
-                <section>
-                  <span>Categoria: </span>
-                  <input className="form-categoria-update"
-                    type="text"
-                    name="categoria"
-                    defaultValue={uniqueCavaleiro.categoria}
-                  ></input>
-                </section>
-                <section>
-                  <span>Tecnica: </span>
-                  <input className="form-tecnica-update"
-                    type="text"
-                    name="tecnica"
-                    defaultValue={uniqueCavaleiro.tecnica}
-                  ></input>
-                </section>
-                <section>
-                  <span>Idade: </span>
-                  <input className="form-idade-update"
-                    type="number"
-                    name="idade"
-                    defaultValue={uniqueCavaleiro.idade}
-                  ></input>
+
                 </section><br />
                 <button type="submit-update" className="btn-submit-update">
-                  Editar
+                  EDITAR LINK
                 </button>
               </form>
             </div>
@@ -185,28 +159,25 @@ export function Home() {
                   <CgClose size={28} color="red" />
                 </button>
               </section>
-              <section className='modal-personagem'>
-                <h2>Nome: {uniqueCavaleiro.nome}</h2>
-                <h3>Constelação: {uniqueCavaleiro.constelacao}</h3>
-                <h3>Categoria: {uniqueCavaleiro.categoria}</h3>
-                <h3>Tecnica: {uniqueCavaleiro.tecnica}</h3>
-                <h3>Idade: {uniqueCavaleiro.idade}</h3>
+              <section className='modal-link'>
+                <h2>Título: {uniqueLink.title}</h2>
+                <h3>Url: {uniqueLink.url}</h3>
               </section>
             </section><br />
             <button className="btn-update"
               onClick={() => {
-                setEditCavaleiro(true);
+                setEditLink(true);
 
               }}
             >
-              Editar
+              EDITAR LINK
             </button><br />
             <button className='btn-delete'
               onClick={() => {
-                deleteCavaleiro(uniqueCavaleiro._id, uniqueCavaleiro.nome);
+                deleteLink(uniqueLink._id);
               }}
             >
-              Delete Cavaleiro
+              DELETAR LINK
             </button>
           </>
         )}
