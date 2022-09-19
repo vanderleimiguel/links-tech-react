@@ -16,7 +16,7 @@
   border-radius: 10px;
   width: 29rem;
   height: 3rem;
-  margin-left: 1rem;
+  margin-left: 5rem;
   box-shadow: 0px 0px 15px rgba(89, 0, 253, 0.3);
   background: grey;
 }
@@ -24,6 +24,7 @@
 .Logo__titulo {
   position: absolute;
   left: 3rem;
+  margin-left: 5rem;
   font-weight: 700;
   font-size: 2.5rem;
 }
@@ -37,11 +38,11 @@
   width: 15rem;
   height: 3rem;
   position: relative;
-  right: 1rem;
   border: none;
   cursor: pointer;
   font-weight: 700;
   font-size: 2.5rem;
+  margin-right: 5rem;
 }
 
 .btn-create-icon:hover {

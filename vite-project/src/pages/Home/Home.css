@@ -1,6 +1,7 @@
 .Home {
-  background: grey;
-  margin: 1rem;
+  background-color: grey;
+  margin-right: 5rem;
+  margin-left: 5rem;
   padding: 1rem;
   border-radius: 20px;
   box-shadow: 0px 0px 15px rgba(25, 0, 250, 0.3);
