@@ -1,0 +1,164 @@
+.Home {
+  background: rgb(241, 255, 0);
+  background: linear-gradient(0deg, rgba(241, 255, 0, 1) 22%, rgba(25, 53, 255, 1) 67%);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(25, 0, 250, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-card {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px 50px;
+}
+
+.modal-personagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.btn-delete {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 3rem;
+  border-width: 1px;
+  color: #fff;
+  border-color: #d0451b;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 0px 0px #cf866c;
+  text-shadow: inset 0px 1px 0px #854629;
+  background: linear-gradient(#d0451b, #d0451b);
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: rgb(252, 38, 38);
+}
+
+.btn-update {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 3rem;
+  border-width: 1px;
+  color: #fff;
+  border-color: #0b0e07;
+  border-radius: 4px;
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  text-shadow: inset 0px 1px 0px #263666;
+  background: linear-gradient(#2dabf9, #0688fa);
+  cursor: pointer;
+}
+
+.btn-update:hover {
+  background: linear-gradient(#0688fa, #2dabf9);
+}
+
+.form-update {
+  position: relative;
+  background-color: rgb(71, 71, 71);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  font-size: 2rem;
+}
+
+.form-inputs-update button {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 15rem;
+  height: 3rem;
+  border-width: 1px;
+  color: #fff;
+  border-color: #0b0e07;
+  border-radius: 4px;
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  text-shadow: inset 0px 1px 0px #263666;
+  background: linear-gradient(#2dabf9, #0688fa);
+  cursor: pointer;
+}
+
+.form-inputs-update button:hover {
+  background: linear-gradient(#0688fa, #2dabf9);
+}
+
+input.form-id-update {
+  width: 20.8rem;
+  font-size: 1.5rem;
+  background-color: #4b6cfd;
+}
+
+input.form-nome-update {
+  width: 17.2rem;
+  font-size: 1.5rem;
+  background-color: #4b6cfd;
+}
+
+input.form-constelacao-update {
+  width: 11.4rem;
+  font-size: 1.5rem;
+  background-color: #4b6cfd;
+}
+
+input.form-categoria-update {
+  width: 14rem;
+  font-size: 1.5rem;
+  background-color: #4b6cfd;
+}
+
+input.form-tecnica-update {
+  width: 15.5rem;
+  font-size: 1.5rem;
+  background-color: #4b6cfd;
+}
+
+input.form-idade-update {
+  width: 17.5rem;
+  font-size: 1.5rem;
+  background-color: #4b6cfd;
+}
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 840px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { api } from "../../utils/api/api";
+import { api } from "../../utils/Api/Api";
 import "./Form.css"
 
 export function Form() {
@@ -20,6 +20,7 @@ export function Form() {
     if (newLink.title == "" || newLink.url == "" || qtdForm < 2) {
       alert("Preencha todos os campos")
     } else {
+      console.log(newLink)
       await api.createLink(newLink);
       location.reload();
     }
