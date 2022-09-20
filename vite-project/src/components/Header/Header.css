@@ -43,10 +43,11 @@
   font-weight: 700;
   font-size: 2.5rem;
   margin-right: 5rem;
+  transition: all .3s ease-in-out;
 }
 
 .btn-create-icon:hover {
-  background-color: rgb(114, 114, 11);
+  background-color: rgb(66, 66, 66);
 }
 
 @media (max-width: 1220px) {
@@ -64,7 +65,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 740px) {
   .row {
     display: flex;
     flex-direction: column;

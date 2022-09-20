@@ -10,10 +10,11 @@
   margin: 1rem;
   box-shadow: 0px 0px 15px rgba(89, 0, 253, 0.3);
   background-color: white;
+  transition: all .3s ease-in-out;
 }
 
 .card-component:hover {
-  background-color: rgb(114, 114, 11);
+  background-color: rgb(66, 66, 66);
 }
 
 .card-component h2 {

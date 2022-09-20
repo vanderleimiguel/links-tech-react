@@ -12,8 +12,8 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    width: "30rem",
-    height: "30rem",
+    width: "45rem",
+    height: "25rem",
     transform: "translate(-50%, -50%)",
     backgroundColor: " rgba(0, 0, 0, 0.8)",
     borderRadius: "15px",
@@ -102,7 +102,7 @@ export function Home() {
       >
         {editLink ? (
           <>
-            (<div className="form-update">
+            <div className="form-update">
               <form onSubmit={updateOneLink} className="form-inputs-update">
                 <section>
                   <span>Id: </span>
@@ -135,7 +135,7 @@ export function Home() {
                 </button>
               </form>
             </div>
-            )
+
           </>
         ) : (
           <>

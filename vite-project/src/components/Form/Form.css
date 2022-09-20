@@ -34,13 +34,13 @@
 }
 
 input.form-title {
-  width: 17.2rem;
+  width: 32rem;
   font-size: 1.5rem;
-  background-color: #f1ff00;
+  background-color: #6bf8b2;
 }
 
 input.form-url {
-  width: 19.8rem;
+  width: 34.5rem;
   font-size: 1.5rem;
-  background-color: #f1ff00;
+  background-color: #6bf8b2;
 }
