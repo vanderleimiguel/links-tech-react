@@ -1,9 +1,17 @@
+const linksHelper = {
+  linkEndPoint: () => `${defaultUrl}`,
+  linkGetAll: () => `${linksHelper.linkEndPoint()}/`,
+  linkCreate: () => `${linksHelper.linkEndPoint()}/create`,
+  linkUpdate: (id) => `${linksHelper.linkEndPoint()}/update/${id}`,
+  linkDelete: (id) => `${linksHelper.linkEndPoint()}/delete/${id}`,
+}
+
 const defaultUrl = "https://api-links-tech.herokuapp.com/links";
 
 export const api = {
 
   createLink: async (link) => {
-    const response = await fetch(defaultUrl + "/create", {
+    const response = await fetch(linksHelper.linkCreate(), {
       method: "POST",
       headers: new Headers({ "Content-Type": "application/json" }),
       body: JSON.stringify(link),
@@ -13,13 +21,13 @@ export const api = {
   },
 
   getAllLinks: async () => {
-    const response = await fetch(defaultUrl + "/");
+    const response = await fetch(linksHelper.linkGetAll());
     const allLinks = await response.json();
     return allLinks;
   },
 
   updateLink: async (linkUpdate, id) => {
-    const response = await fetch(defaultUrl + "/update/" + id, {
+    const response = await fetch(linksHelper.linkUpdate(id), {
       method: "PUT",
       headers: new Headers({ "Content-Type": "application/json" }),
       body: JSON.stringify(linkUpdate),
@@ -29,7 +37,7 @@ export const api = {
   },
 
   deleteLink: async (linkId) => {
-    const response = await fetch(defaultUrl + "/delete/" + linkId, {
+    const response = await fetch(linksHelper.linkDelete(linkId), {
       method: "DELETE",
       headers: new Headers({ "Content-Type": "application/json" }),
     });
